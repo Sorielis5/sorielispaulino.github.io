@@ -146,6 +146,19 @@
 
     <script>
          let zoomLevel = 1;
+
+
+        
+        const cursor = document.querySelector('.custom-cursor');
+
+
+
+   document.addEventListener("mousemove", function(event) {
+          let cursor = document.querySelector(".custom-cursor");
+          cursor.style.left = event.clientX + "px";
+          cursor.style.top = event.clientY + "px";
+      });
+
 function openModal(imageSrc, description) {
     const modal = document.getElementById("image-modal");
     const modalImage = document.getElementById("modal-image");
@@ -210,16 +223,6 @@ function closeModal() {
         
     
       
-
-        const cursor = document.querySelector('.custom-cursor');
-
-
-
-   document.addEventListener("mousemove", function(event) {
-          let cursor = document.querySelector(".custom-cursor");
-          cursor.style.left = event.clientX + "px";
-          cursor.style.top = event.clientY + "px";
-      });
 
 
     
