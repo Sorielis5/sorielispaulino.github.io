@@ -287,58 +287,44 @@ body {
     cursor: url('https://i.postimg.cc/rwXv5L8y/Untitled-Artwork.gif'), auto;
 }
 
-@media (max-width: 768px) {
-    body {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll; /* prevent weird fixed behavior on mobile */
+
     
-        display : flex;
+    @media (max-width: 768px) {
+    body {
         background-image: 
             url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
             url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
             url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-family: sans-serif; 
-    
+        background-attachment: scroll;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        font-family: sans-serif;
+        flex-direction: column;
+    }
+
+    .page {
+        padding: 20px;
+        min-width: 100vw;
+        height: auto;
+        flex-direction: column;
     }
 
     .modal-content img {
         display: none;
     }
 
-    
-    
-    /*.modal-content,
-    .image-modal .modal-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }*/
-
-   /*#modal-image {
-        width: 90vw;
-        height: auto;
-        max-height: 60vh;
-    }*/
-
-    #image-description {
+    .image-description {
         padding: 1em;
         font-size: 1rem;
         line-height: 1.5em;
         max-width: 90vw;
         color: white;
-        text-shadow: clear;
+        text-shadow: none;
     }
-
-   /* .image-modal {
-        align-items: center;
-        justify-content: center;
-        padding: 1em;
-    }*/
 
     #contact {
         padding: 20px;
@@ -355,7 +341,33 @@ body {
         line-height: 1.4;
         word-wrap: break-word;
     }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow-x: visible;
+    }
+
+    .box img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .custom-cursor {
+        display: none;
+    }
+
+    .top-left-logo,
+    .top-right-logo {
+        width: 150px;
+    }
+
+    .logo-text {
+        font-size: 32px;
+    }
 }
+
 
 .image-modal .modal-content {
     display: flex;
