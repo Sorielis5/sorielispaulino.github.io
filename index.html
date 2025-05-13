@@ -227,8 +227,8 @@ function closeModal() {
 
     
 
-      const aboutText = `
-    My work is an ongoing reflection of my personal journey, shaped by the emotions I experience each day.
+     const aboutText = `
+My work is an ongoing reflection of my personal journey, shaped by the emotions I experience each day.
 Whether I’m creating drawings or digital art, each piece becomes an emotional moment of where I am at that moment.
 These pieces are just pieces of me growing and improving over time as an artist.
 Each piece represents my evolution not only as an artist but as a person trying to understand my identity and my culture and interests.
@@ -236,21 +236,23 @@ But the more I do these creations, the more as a self-discovery.
 So with this portfolio, my work is about embracing the process of growth through art.
 `;
 
-let iAbout = 0;
-const aboutMeEl = document.getElementById("about-me-text").querySelector("b");
+    let iAbout = 0;
 
-function typeAboutMe() {
-    if (iAbout < aboutText.length) {
-        const char = aboutText.charAt(iAbout);
-        aboutMeEl.innerHTML += char;
-        iAbout++;
-        setTimeout(typeAboutMe, 25); // Speed (ms)
-    }
-}
+    window.addEventListener("load", () => {
+        const aboutMeEl = document.querySelector("#about-me-text b");
+        aboutMeEl.textContent = ""; // Ensure clean start
 
+        function typeAboutMe() {
+            if (iAbout < aboutText.length) {
+                const char = aboutText.charAt(iAbout);
+                aboutMeEl.innerHTML += (char === '\n') ? '<br>' : char;
+                iAbout++;
+                setTimeout(typeAboutMe, 25); // Adjust speed here
+            }
+        }
 
-window.addEventListener("load", typeAboutMe);
-
+        typeAboutMe(); // Start typing
+    });
 
 </script>  
 
