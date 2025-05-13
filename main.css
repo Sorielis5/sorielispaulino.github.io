@@ -288,6 +288,24 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; /* prevent weird fixed behavior on mobile */
+    
+        display : flex;
+        background-image: 
+            url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
+            url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
+            url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif; 
+    
+    }
+
     .modal-content img {
         display: none;
     }
@@ -322,44 +340,6 @@ body {
         padding: 1em;
     }*/
 
-   
-}
-
-.image-modal .modal-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    background-color: clear;
-    padding: 1em;
-    border-radius: 10px;
-    max-width: 90%;
-    flex-wrap: wrap; 
-}
-
-
-@media (max-width: 768px){
-    body {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll; /* prevent weird fixed behavior on mobile */
-    
-        display : flex;
-        background-image: 
-            url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
-            url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
-            url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-family: sans-serif; 
-    
-    }
-
-}
-
-    @media (max-width: 768px) {
     #contact {
         padding: 20px;
         font-size: 14px;
@@ -377,6 +357,22 @@ body {
     }
 }
 
+.image-modal .modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: clear;
+    padding: 1em;
+    border-radius: 10px;
+    max-width: 90%;
+    flex-wrap: wrap; 
+}
+
+
+
+
+    
 
 @keyframes blink {
     0% { opacity: 1; }
