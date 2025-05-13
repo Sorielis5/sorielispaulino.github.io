@@ -21,6 +21,17 @@ body {
     box-sizing: border-box;
 }
 
+/*body {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100vh;
+    width: max-content; /* Ensure it fits all sections 
+    white-space: nowrap;
+    /*background-image:url('https://freight.cargo.site/t/original/i/E2269648908541467430738997934218/Untitled_Artwork2-ezgif.com-reverse.gif');
+    
+}*/
 
 
 
@@ -31,7 +42,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: clear;
+    background-color: transparent;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
@@ -96,7 +107,10 @@ body {
 }
 
 
-
+/*body {
+    font-family: Arial, sans-serif;
+}
+*/
 /*
 
 .image-modal {
@@ -193,7 +207,7 @@ body {
 }
 
 .box {
-    background: clear;
+    background: transparent;
     padding: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -226,21 +240,20 @@ body {
 }
 
 
-
+/* Custom cursor styles */
 .custom-cursor {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100px; /* Adjust size as needed */
-    height: 100px;
+    width: 400px; /* Increased size */
+    height: 300px; /* Increased size */
     background-image: url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    transition: transform 0.05s linear; /* Smoother tracking */
+    transition: transform 0.1s ease;
     will-change: transform;
 }
 
@@ -288,29 +301,27 @@ body {
     cursor: url('https://i.postimg.cc/rwXv5L8y/Untitled-Artwork.gif'), auto;
 }
 
-
-    
-    @media (max-width: 768px) {
-    body {
-        background-image: 
-            url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
-            url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
-            url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        height: 100vh;
-        width: 100vw;
-        overflow-x: hidden;
-        font-family: sans-serif;
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
     .modal-content img {
         display: none;
     }
 
-     #image-description {
+    
+    
+    /*.modal-content,
+    .image-modal .modal-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }*/
+
+   /*#modal-image {
+        width: 90vw;
+        height: auto;
+        max-height: 60vh;
+    }*/
+
+    #image-description {
         padding: 1em;
         font-size: 1rem;
         line-height: 1.5em;
@@ -319,17 +330,21 @@ body {
         text-shadow: transparent;
     }
 
+   /* .image-modal {
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }*/
 
-    
+   
 }
-
 
 .image-modal .modal-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    background-color: clear;
+    background-color: transparent;
     padding: 1em;
     border-radius: 10px;
     max-width: 90%;
@@ -337,9 +352,27 @@ body {
 }
 
 
-
-
+@media (max-width: 768px){
+    body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; /* prevent weird fixed behavior on mobile */
     
+        display : flex;
+        background-image: 
+            url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
+            url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
+            url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif; 
+    
+    }
+
+}
+
 
 @keyframes blink {
     0% { opacity: 1; }
