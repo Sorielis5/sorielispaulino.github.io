@@ -241,13 +241,13 @@ body {
     width: 800px; /* Increased size */
     height: 800px; /* Increased size */
     background-image: url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif');
-    background-size: contain;
+    /*background-size: contain;
     background-repeat: no-repeat;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
     transition: transform 0.1s ease;
-    will-change: transform;
+    will-change: transform;*/
 }
 
 .top-right-logo {
