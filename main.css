@@ -226,21 +226,22 @@ body {
 }
 
 
-/* Custom cursor styles */
+
 .custom-cursor {
     position: fixed;
-    /*top: 0;
-    left: 0;*/
-    width: 800px; /* Increased size */
-    height: 800px; /* Increased size */
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
     background-image: url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif');
-    /*background-size: contain;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     pointer-events: none;
     z-index: 9999;
     transform: translate(-50%, -50%);
-    transition: transform 0.1s ease;
-    will-change: transform;*/
+    transition: transform 0.05s linear; /* Smoother tracking */
+    will-change: transform;
 }
 
 .top-right-logo {
