@@ -147,14 +147,20 @@
     <script>
         let zoomLevel = 1;
     
-        const cursor = document.getElementById("custom-cursor");
+      
+
+        const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+});
     
-        document.addEventListener("mousemove", function (event) {
-            if (cursor) {
-                cursor.style.left = event.clientX + "px";
-                cursor.style.top = event.clientY + "px";
-            }
-        });
+        //document.addEventListener("mousemove", function (event) {
+            //if (cursor) {
+               // cursor.style.left = event.clientX + "px";
+               // cursor.style.top = event.clientY + "px";
+            //}
+        //});
     
 function openModal(imageSrc, description) {
     const modal = document.getElementById("image-modal");
