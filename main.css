@@ -236,8 +236,8 @@ body {
 /* Custom cursor styles */
 .custom-cursor {
     position: fixed;
-    top: 0;
-    left: 0;
+    /*top: 0;
+    left: 0;*/
     width: 800px; /* Increased size */
     height: 800px; /* Increased size */
     background-image: url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif');
