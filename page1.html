@@ -106,7 +106,7 @@
                 style="max-width: 700px; width: 800px; height: 800px; object-fit: cover; border-radius: 0; ">
             
                 <p id="about-me-text" style="margin: 100px 0 0 100px;background-color: rgba(21, 61, 23, 0.3) ;">
-                    <b></b>
+            
                 </p>
                 <div style="text-align: center; margin-top: 80px;">
                     <img 
@@ -145,23 +145,7 @@
     <!-- JavaScript -->
 
     <script>
-        let zoomLevel = 1;
-    
-      
-
-        const cursor = document.querySelector('.custom-cursor');
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
-});
-    
-        //document.addEventListener("mousemove", function (event) {
-            //if (cursor) {
-               // cursor.style.left = event.clientX + "px";
-               // cursor.style.top = event.clientY + "px";
-            //}
-        //});
-    
+        
 function openModal(imageSrc, description) {
     const modal = document.getElementById("image-modal");
     const modalImage = document.getElementById("modal-image");
@@ -223,6 +207,13 @@ function closeModal() {
     document.body.style.cursor = "default";
     }
 
+         let zoomLevel = 1;
+    
+      
+
+        const cursor = document.querySelector('.custom-cursor');
+
+
 
    document.addEventListener("mousemove", function(event) {
           let cursor = document.querySelector(".custom-cursor");
@@ -266,4 +257,3 @@ window.addEventListener("load", typeAboutMe);
 
 </body>
 </html>
-
