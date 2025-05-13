@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorielis Adventure</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    body {
+      display: flex;
+      background-image:
+        url('https://i.postimg.cc/N0bSh9RL/Untitled-Artwork2-ezgif-com-reverse.gif'),
+        url('https://i.postimg.cc/KzzVmG5f/04-07-2025-X-Design-1.png'),
+        url('https://i.postimg.cc/7hJWTKdT/Untitled-Artwork.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<footer style="position: fixed; bottom: 0; left: 0; padding: 20px; font-size: 18px; font-family: sans-serif; color: darkseagreen; background-color: rgba(76, 175, 80, 0.3);">
+  Contact me at 
+  <a href="mailto:sorielispaulino145@gmail.com" style="color: orange;">sorielispaulino145@gmail.com</a> or 
+  Instagram: 
+  <a href="https://instagram.com/so_drawing__" target="_blank" style="color: orange;">@so_drawing__</a>
+</footer>
+
+<div class="page" id="first-page"></div>
+
+<div class="page" id="traditional-page">
+  <div class="gallery">
+    <div class="box" onclick="openModal('https://freight.cargo.site/t/original/i/Y2261049322397283924347378333834/IMG_3065.jpeg', 'In a room sealed tight with silence <br>and ache,  The days unraveled, sleepless.<br> Pain curled sharp beneath my skin—<br>A storm inside I could not pin.')"> 
+      <img src="https://freight.cargo.site/t/original/i/Y2261049322397283924347378333834/IMG_3065.jpeg" alt="A boy in a purple background and with scattered lines of yellow and dark blue.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/xC5gqP65/temp-Image-Foew-CJ.avif', 'The caps are tossed, like hope in flight,<br>We glow beneath the morning light<br>A chapter ends, but were not through— <br>This is the start of something new.')">
+      <img src="https://i.postimg.cc/xC5gqP65/temp-Image-Foew-CJ.avif" alt="A girl with a graduation cap.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/sgLGTKN2/IMG-3062.jpg', 'I painted sadness in her frame,<br> A loneliness without a name. <br>But underneath, a softer grace—<br> A calmness lived upon her face.')">
+      <img src="https://i.postimg.cc/sgLGTKN2/IMG-3062.jpg" alt="Girl looking to the left side with black background.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/BvdDnNTz/IMG-3063.jpg', 'Yet in that awkward, earnest frame,<br> I found no shame, I placed no blame.<br>It showed me how I’ve yet to grow,<br>How flaws are part of what I know.')">
+      <img src="https://i.postimg.cc/BvdDnNTz/IMG-3063.jpg" alt="Curly hair girl laying on hand and pencil on hand.">
+    </div>
+  </div>
+</div>
+
+<div class="page" id="digital-page">
+  <div class="gallery">
+    <div class="box" onclick="openModal('https://i.postimg.cc/GhVKBtxW/temp-Image-Vt-PNLn.avif', 'I feel tired feeling the ocean hug me for comfort.')">
+      <img src="https://i.postimg.cc/GhVKBtxW/temp-Image-Vt-PNLn.avif" alt="Girl laying on water.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/bJxGNPNG/Screenshot-2025-02-27-at-10-45-55-AM.png', 'She does not speak, she’s still very still.')">
+      <img src="https://i.postimg.cc/bJxGNPNG/Screenshot-2025-02-27-at-10-45-55-AM.png" alt="Girl leaning on the wall looking left.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/KvzpkdSM/temp-Imageb-CWipi.avif', 'Do you truly know your friends?<br>Be careful—don’t trust others too quickly.<br>Always listen to your mom;<br>a mother’s instinct is a powerful force,<br>often sensing danger before it strikes.')">
+      <img src="https://i.postimg.cc/KvzpkdSM/temp-Imageb-CWipi.avif" alt="Two people leaning on the table and staring at us with red eyes.">
+    </div>
+    <div class="box" onclick="openModal('https://i.postimg.cc/nVwY5rgX/temp-Imagen-X8-AKc.avif', 'I keep and keep drowning.<br> What is this?<br> You feel the water?<br> Is warm.')">
+      <img src="https://i.postimg.cc/nVwY5rgX/temp-Imagen-X8-AKc.avif" alt="A girl underwater with her eyes closed.">
+    </div>
+  </div>
+</div>
+
+<div class="page" id="about-me">
+  <div class="about-me" style="color: white; font-family: sans-serif; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); font-size: 20px; max-width: 1200px; display: flex; align-items: flex-start; margin: 0 auto;">
+    <img src="https://i.postimg.cc/L47d61w1/Untitled-Artwork4-ezgif-com-loop-count.gif" alt="Me when I was a child with sun glasses and smiling" style="max-width: 700px; width: 800px; height: 800px; object-fit: cover;">
+    <p id="about-me-text" style="margin: 100px 0 0 100px; background-color: rgba(21, 61, 23, 0.3);"><b></b></p>
+    <div style="text-align: center; margin-top: 80px;">
+      <img src="https://i.postimg.cc/3wWCRdPk/Untitled-Artwork6-ezgif-com-speed.gif" alt="A dog with a hat." style="max-width: 150px; margin-top: 600px;">
+    </div>
+  </div>
+</div>
+
+<div id="image-modal" class="image-modal" onclick="closeModal()">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <span class="close-button" onclick="closeModal()">×</span>
+    <img id="modal-image" src="" alt="Expanded Image">
+    <div id="image-description" class="image-description"></div>
+  </div>
+</div>
+
+<div class="top-right-logo">
+  <img src="https://i.postimg.cc/CKZk09qD/04-07-2025-X-Design.png" alt="Sorielis Paulino">
+</div>
+
+<div class="top-left-logo">
+  <span class="logo-text">Sorielis Paulino</span>
+</div>
+
+<div class="custom-cursor" id="custom-cursor" style="position: fixed; width: 30px; height: 30px; pointer-events: none; background-image: url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif'); background-size: cover; z-index: 9999;"></div>
+
+<script>
+let zoomLevel = 1;
+const cursor = document.getElementById("custom-cursor");
+
+document.addEventListener("mousemove", function (event) {
+  if (cursor) {
+    cursor.style.left = event.clientX + "px";
+    cursor.style.top = event.clientY + "px";
+  }
+});
+
+function openModal(imageSrc, description) {
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const imageDescription = document.getElementById("image-description");
+
+  modal.style.display = "flex";
+  modalImage.src = imageSrc;
+  imageDescription.innerHTML = "";
+
+  zoomLevel = 1;
+  modalImage.style.transform = `scale(${zoomLevel})`;
+
+  if (cursor) {
+    cursor.style.backgroundImage = "url('https://i.postimg.cc/rwXv5L8y/Untitled-Artwork.gif')";
+    cursor.style.display = "block";
+  }
+
+  modal.style.cursor = "none";
+  document.body.style.cursor = "none";
+
+  let i = 0;
+  function typeWriter() {
+    if (i < description.length) {
+      const char = description.charAt(i);
+      if (char === "<") {
+        const end = description.indexOf(">", i);
+        imageDescription.innerHTML += description.substring(i, end + 1);
+        i = end + 1;
+      } else {
+        imageDescription.innerHTML += char;
+        i++;
+      }
+      setTimeout(typeWriter, 25);
+    }
+  }
+  typeWriter();
+}
+
+function closeModal() {
+  const modal = document.getElementById("image-modal");
+  modal.style.display = "none";
+
+  if (cursor) {
+    cursor.style.backgroundImage = "url('https://i.postimg.cc/K8PCNszP/ezgif-com-rotate.gif')";
+    cursor.style.display = "block";
+  }
+
+  modal.style.cursor = "default";
+  document.body.style.cursor = "default";
+}
+
+const aboutText = `
+My work is an ongoing reflection of my personal journey, shaped by the emotions I experience each day.
+Whether I’m creating drawings or digital art, each piece becomes an emotional moment of where I am at that moment.
+These pieces are just pieces of me growing and improving over time as an artist.
+Each piece represents my evolution not only as an artist but as a person trying to understand my identity and my culture and interests.
+But the more I do these creations, the more as a self-discovery.
+So with this portfolio, my work is about embracing the process of growth through art.
+`;
+
+let iAbout = 0;
+const aboutMeEl = document.getElementById("about-me-text").querySelector("b");
+
+function typeAboutMe() {
+  if (iAbout < aboutText.length) {
+    const char = aboutText.charAt(iAbout);
+    aboutMeEl.innerHTML += char;
+    iAbout++;
+    setTimeout(typeAboutMe, 25);
+  }
+}
+
+window.addEventListener("load", typeAboutMe);
+</script>
+
+</body>
+</html>
